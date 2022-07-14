@@ -228,7 +228,7 @@ class LFWDataset(data.Dataset):
         img_file = self.files[self.split][index]
         img = PIL.Image.open(img_file)
         if DEBUG:
-            print img_file
+            print(img_file)
         im_out = self.transforms(img)
         return im_out
 
@@ -260,7 +260,7 @@ class IJBADataset(data.Dataset):
         if not img.mode == 'RGB':
             img = img.convert('RGB')
         if DEBUG:
-            print img_file
+            print(img_file)
         im_out = self.transforms(img)
         return im_out
 
@@ -366,7 +366,7 @@ class LFWDataset(data.Dataset):
         img_file = self.files[self.split][index]
         img = PIL.Image.open(img_file)
         if DEBUG:
-            print img_file
+            print(img_file)
         im_out = self.transforms(img)
         return im_out
 
@@ -398,7 +398,7 @@ class IJBADataset(data.Dataset):
         if not img.mode == 'RGB':
             img = img.convert('RGB')
         if DEBUG:
-            print img_file
+            print(img_file)
         im_out = self.transforms(img)
         return im_out
 
